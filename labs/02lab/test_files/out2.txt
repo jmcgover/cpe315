@@ -1,0 +1,5 @@
+Enter the number of disks to be moved: Move from peg 1 to peg 2
+Move from peg 1 to peg 3
+Move from peg 2 to peg 3
+
+2 discs moved from peg 1 to peg 3 in 3 steps.
