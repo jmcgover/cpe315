@@ -1,0 +1,12 @@
+FLAGS=-O1 -g -mthumb -msoft-float
+# list .s source files here
+SRCFILES=main.s myadd.s mymult.s
+
+all:	mymult
+
+mymult: $(SRCFILES) 
+	gcc $(FLAGS) -o mymult $^ 
+
+clean: 
+	rm -f *.o mymult
+
