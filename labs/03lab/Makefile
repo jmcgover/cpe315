@@ -4,14 +4,15 @@ FLAGS=-O1 -g -mthumb -msoft-float
 CFLAGS=-O2 -g
 LIBS=
 EXES= mymult mult
+SRCFILES= main.s mymult.s myadd.s
 
 all: $(EXES)
 
-mymult: mymult.s
+mymult: $(SRCFILES)
 	$(CC) $(FLAGS) $(LIBS) -o $@ $^
 
 mult: mult.o
-	$(CPP) $(FLAGS) $(LIBS) -o $@ $^
+	$(CPP) $(CFLAGS) $(LIBS) -o $@ $^
 
 mult.o: mult.cpp
 	$(CPP) $(CFLAGS) $(LIBS) -c $^

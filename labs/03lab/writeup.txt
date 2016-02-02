@@ -1,0 +1,27 @@
+@ Jeff McGovern
+@ Lab 3 - Shift-and-Add
+@ Monday 2/1/16
+
+	multiplicand: 	-2 	101
+main.s:
+ignore 	 : 39 		1 	1
+			39 	39
+
+mymult.s:
+pre-while: 7 		1 	1
+while 	 : 8 		7 	32
+add 	 : 4 		4 	31
+postwhile: 5 		1 	1
+			92 	400
+
+myadd.s:
+pre-while: 10 		4 	31
+while    : 16 		132 	1,023
+postwhile: 5 		4 	31
+			2,172 	16,553
+
+Total:			2,256   17,194
+
+When the multiplicand is -2, or 0xFFFF EFFF in hex, the number of instructions executed is severely less, due to the multiplier being 101, or 0x00006500. The multiplier shifts down to 0x00 very quickly, compared to when -2 is the multiplier, which shifts all the way down to the MSB. One simple solution to this is to compare the multiplicand and multiplier for the number with the lowest MSB. This can be done using the bhi branch instruction, which is an unsigned greater than. I have verified that it lowers the number of instructions, but am not sure if that's allowed for the extra credit, so I left it out.
+
+The obscene amount of instructions occurring because of the add are because the full-adder style adding method goes bit-by-bit, performing the XOR for the sum and the AND for the carry. I could not figure out a way around this.
