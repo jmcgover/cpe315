@@ -22,6 +22,29 @@ postwhile: 5 		4 	31
 
 Total:			2,256   17,194
 
-When the multiplicand is -2, or 0xFFFF EFFF in hex, the number of instructions executed is severely less, due to the multiplier being 101, or 0x00006500. The multiplier shifts down to 0x00 very quickly, compared to when -2 is the multiplier, which shifts all the way down to the MSB. One simple solution to this is to compare the multiplicand and multiplier for the number with the lowest MSB. This can be done using the bhi branch instruction, which is an unsigned greater than. I have verified that it lowers the number of instructions, but am not sure if that's allowed for the extra credit, so I left it out.
+When the multiplicand is -2, or 0xFFFF EFFF in hex, the number of instructions executed is severely less, due to the multiplier being 101, or 0x00006500. The multiplier shifts down to 0x00 very quickly, compared to when -2 is the multiplier, which shifts all the way down to the MSB. One simple solution to this is to compare the multiplicand and multiplier for the number with the lowest MSB. This can be done using the bhi branch instruction, which is an unsigned greater than. All that needs to be done are the following changes:
+
+mymult:
+    push {r4,r5,r6,lr}
+    mov r4, r0
+    mov r5, r1
+    mov r6, #0          @ int product = 0;
+while:
+
+to
+
+
+mymult:
+    push {r4,r5,r6,lr}
+    mov r6, #0          @ int product = 0;
+    mov r4, r0
+    mov r5, r1
+    cmp r4, r5
+    bhi while
+    mov r5, r0
+    mov r4, r1
+while:
+
+I have verified that it lowers the number of instructions to the shorter version plus a couple for the check and swap, but am not sure if that's allowed for the extra credit, so I left it out.
 
 The obscene amount of instructions occurring because of the add are because the full-adder style adding method goes bit-by-bit, performing the XOR for the sum and the AND for the carry. I could not figure out a way around this.
