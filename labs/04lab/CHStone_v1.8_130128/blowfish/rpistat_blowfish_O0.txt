@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./blowfish-O0
+Thu Feb 11 08:15:35 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 9582586
+ Instructions: 2183324 [4366648]
+ IBUF stall cycles: 4346695 [8693390]
+ Instr periods: 1
+ CPI: 2.194  
+ IBUF stall percent: 90.721 %
+
+ DC cached accesses: 1152 [2304]
+ DC misses: 177 [354]
+ DC periods: 1
+ DC miss ratio: 15.365 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.080s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.531s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.519s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.492s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.454s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.473s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.417s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.388s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.353s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.337s
+user	0m0.010s
+sys	0m0.000s

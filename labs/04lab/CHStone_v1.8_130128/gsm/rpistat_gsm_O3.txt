@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./gsm-O3
+Thu Feb 11 08:15:28 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 8215905
+ Instructions: 1155289 [2310578]
+ IBUF stall cycles: 4748145 [9496290]
+ Instr periods: 1
+ CPI: 3.556  
+ IBUF stall percent: 115.584%
+
+ DC cached accesses: 1148 [2296]
+ DC misses: 160 [320]
+ DC periods: 1
+ DC miss ratio: 13.937 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.063s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.060s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.076s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.086s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.088s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.066s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.103s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.076s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.049s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.029s
+user	0m0.000s
+sys	0m0.000s

@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./jpeg-O3
+Thu Feb 11 08:15:26 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 24586291
+ Instructions: 5030347 [10060694]
+ IBUF stall cycles: 13019963 [26039926]
+ Instr periods: 1
+ CPI: 2.444  
+ IBUF stall percent: 105.912%
+
+ DC cached accesses: 1158 [2316]
+ DC misses: 194 [388]
+ DC periods: 1
+ DC miss ratio: 16.753 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.197s
+user	0m0.000s
+sys	0m0.020s
+
+real	0m0.415s
+user	0m0.010s
+sys	0m0.010s
+
+real	0m0.427s
+user	0m0.010s
+sys	0m0.010s
+
+real	0m0.352s
+user	0m0.000s
+sys	0m0.020s
+
+real	0m0.338s
+user	0m0.010s
+sys	0m0.010s
+
+real	0m0.311s
+user	0m0.020s
+sys	0m0.000s
+
+real	0m0.269s
+user	0m0.000s
+sys	0m0.020s
+
+real	0m0.312s
+user	0m0.000s
+sys	0m0.020s
+
+real	0m0.226s
+user	0m0.010s
+sys	0m0.010s
+
+real	0m0.166s
+user	0m0.000s
+sys	0m0.020s

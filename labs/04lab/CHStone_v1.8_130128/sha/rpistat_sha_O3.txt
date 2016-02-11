@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./sha-O3
+Thu Feb 11 08:15:39 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 8759609
+ Instructions: 1671084 [3342168]
+ IBUF stall cycles: 4716841 [9433682]
+ Instr periods: 1
+ CPI: 2.621  
+ IBUF stall percent: 107.695%
+
+ DC cached accesses: 1183 [2366]
+ DC misses: 168 [336]
+ DC periods: 1
+ DC miss ratio: 14.201 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.096s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.095s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.096s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.101s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.092s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.069s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.059s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.088s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.064s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.043s
+user	0m0.000s
+sys	0m0.010s

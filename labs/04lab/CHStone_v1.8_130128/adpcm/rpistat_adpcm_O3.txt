@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./adpcm-O3
+Thu Feb 11 08:15:41 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 9000835
+ Instructions: 1256853 [2513706]
+ IBUF stall cycles: 5145112 [10290224]
+ Instr periods: 1
+ CPI: 3.581  
+ IBUF stall percent: 114.325%
+
+ DC cached accesses: 1147 [2294]
+ DC misses: 175 [350]
+ DC periods: 1
+ DC miss ratio: 15.257 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.086s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.074s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.090s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.090s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.080s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.068s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.069s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.036s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.041s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.084s
+user	0m0.000s
+sys	0m0.000s

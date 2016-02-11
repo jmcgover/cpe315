@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./dfmul-O2
+Thu Feb 11 08:15:18 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 14524203
+ Instructions: 1934592 [3869184]
+ IBUF stall cycles: 9003113 [18006226]
+ Instr periods: 1
+ CPI: 3.754  
+ IBUF stall percent: 123.974%
+
+ DC cached accesses: 1182 [2364]
+ DC misses: 188 [376]
+ DC periods: 1
+ DC miss ratio: 15.905 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.115s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.116s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.144s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.145s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.148s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.125s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.120s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.114s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.080s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.061s
+user	0m0.000s
+sys	0m0.010s

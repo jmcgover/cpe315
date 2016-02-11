@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./dfadd-O3
+Thu Feb 11 08:15:22 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 17563017
+ Instructions: 2569773 [5139546]
+ IBUF stall cycles: 10793347 [21586694]
+ Instr periods: 1
+ CPI: 3.417  
+ IBUF stall percent: 122.910%
+
+ DC cached accesses: 1154 [2308]
+ DC misses: 189 [378]
+ DC periods: 1
+ DC miss ratio: 16.378 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.218s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.204s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.190s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.245s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.263s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.175s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.339s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.156s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.099s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.091s
+user	0m0.000s
+sys	0m0.010s

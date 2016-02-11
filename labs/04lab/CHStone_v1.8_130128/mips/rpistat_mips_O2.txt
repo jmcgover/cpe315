@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./mips-O2
+Thu Feb 11 08:15:15 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 7942590
+ Instructions: 1117998 [2235996]
+ IBUF stall cycles: 4569793 [9139586]
+ Instr periods: 1
+ CPI: 3.552  
+ IBUF stall percent: 115.071%
+
+ DC cached accesses: 1184 [2368]
+ DC misses: 173 [346]
+ DC periods: 1
+ DC miss ratio: 14.611 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.085s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.049s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.067s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.066s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.059s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.071s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.054s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.057s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.043s
+user	0m0.000s
+sys	0m0.000s

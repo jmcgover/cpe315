@@ -1,0 +1,76 @@
+***************************************************************
+rpistat: ./aes-O0
+Thu Feb 11 08:15:44 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 2
+
+ Cycles: 10806247
+ Instructions: 1503090 [3006180]
+ IBUF stall cycles: 6347900 [12695800]
+ Instr periods: 1
+ CPI: 3.595  
+ IBUF stall percent: 117.486%
+
+ DC cached accesses: 1188 [2376]
+ DC misses: 173 [346]
+ DC periods: 1
+ DC miss ratio: 14.562 %
+
+ MicroTLB misses: 0 [-1]
+ Main TLB misses: 0 [-1]
+ TLB periods: 0
+ Micro miss rate: nan     PTI
+ Main miss rate: nan     PTI
+
+ Branches: 0 [-1]
+ Mispredicted BR: 0 [-1]
+ BR periods: 0
+ Branch rate: nan     PTI
+
+real	0m0.077s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.085s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.140s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.116s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.132s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.074s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.068s
+user	0m0.000s
+sys	0m0.010s
+
+real	0m0.060s
+user	0m0.010s
+sys	0m0.000s
+
+real	0m0.047s
+user	0m0.000s
+sys	0m0.010s

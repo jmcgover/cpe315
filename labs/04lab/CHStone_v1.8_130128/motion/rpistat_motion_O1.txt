@@ -1,0 +1,77 @@
+***************************************************************
+rpistat: ./motion-O1
+Thu Feb 11 08:15:42 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 5
+
+ Cycles: 37478753
+ Instructions: 981086 [2452715]
+ IBUF stall cycles: 3956246 [9890615]
+ Instr periods: 2
+ CPI: 15.281 
+ IBUF stall percent: 26.390 %
+
+ DC cached accesses: 97691 [488455]
+ DC misses: 2249 [11245]
+ DC periods: 1
+ DC miss ratio: 2.302  %
+
+ MicroTLB misses: 19843 [99215]
+ Main TLB misses: 1221 [6105]
+ TLB periods: 1
+ Micro miss rate: 40.451  PTI
+ Main miss rate: 2.489   PTI
+
+ Branches: 407591 [2037955]
+ Mispredicted BR: 48552 [242760]
+ BR periods: 1
+ Branch rate: 830.898 PTI
+ Mispredict ratio: 11.912 %
+
+real	0m0.072s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.056s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.083s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.100s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.058s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.052s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.086s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.057s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.054s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.046s
+user	0m0.000s
+sys	0m0.000s
