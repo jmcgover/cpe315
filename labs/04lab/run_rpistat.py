@@ -24,9 +24,17 @@ def main():
                 opt_level = 'O{}'.format(i)
                 exe_name = './{}-{}'.format(test_name, opt_level)
                 assert(os.path.exists(exe_name))
+
+                # BEGIN RPISTAT
                 run([EXE_RPISTAT, exe_name])
+                # END   RPISTAT
                 rpi_res_filename = '{}_{}_{}.txt'.format('rpistat',test_name,opt_level)
                 os.rename(FILE_RPISTAT, rpi_res_filename)
+                with open(rpi_res_filename, 'a') as file:
+                    for j in range(10):
+                        #run(['/usr/bin/env','time', '-f', 'Run {}: %e'.format(i), exe_name], stdout=file)
+                        #run(['time', exe_name], stderr=file, shell=True)
+                        subprocess.Popen(['/bin/bash', '-c', 'time {}'.format(exe_name)], stderr=file)
             os.chdir('../')
     os.chdir('../')
     return 0
