@@ -23,18 +23,23 @@ def main():
             for i in range(0,3 + 1):
                 opt_level = 'O{}'.format(i)
                 exe_name = './{}-{}'.format(test_name, opt_level)
+                exe_prof_name = './{}-prof-O{}'.format(test_name, i)
                 assert(os.path.exists(exe_name))
 
                 # BEGIN RPISTAT
                 run([EXE_RPISTAT, exe_name])
                 # END   RPISTAT
                 rpi_res_filename = '{}_{}_{}.txt'.format('rpistat',test_name,opt_level)
+                gpf_res_filename = '{}_{}_{}.txt'.format('gprof',test_name,opt_level)
                 os.rename(FILE_RPISTAT, rpi_res_filename)
                 with open(rpi_res_filename, 'a') as file:
                     for j in range(10):
                         #run(['/usr/bin/env','time', '-f', 'Run {}: %e'.format(i), exe_name], stdout=file)
                         #run(['time', exe_name], stderr=file, shell=True)
                         subprocess.Popen(['/bin/bash', '-c', 'time {}'.format(exe_name)], stderr=file)
+                with open(gpf_res_filename, 'w') as file:
+                    print('Running {}'.format(exe_prof_name))
+                    subprocess.run(['gprof', exe_prof_name], stdout=file)
             os.chdir('../')
     os.chdir('../')
     return 0

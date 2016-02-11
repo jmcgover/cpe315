@@ -25,18 +25,32 @@ def main():
             os.chdir(file.name)
             for i in range(0,3 + 1):
                 exe_name = '{}-O{}'.format(test_name, i)
+                exe_prof_name = '{}-prof-O{}'.format(test_name, i)
                 opt_flag = '-O{}'.format(i)
                 if args.clean:
                     if os.path.exists(exe_name):
                         print('\tFound {} --- removing...'.format(exe_name))
                         os.remove(exe_name)
+                    if os.path.exists(exe_prof_name):
+                        print('\tFound {} --- removing...'.format(exe_prof_name))
+                        os.remove(exe_prof_name)
                     continue
-                if not args.force and os.path.exists(exe_name):
-                    print('\tFound {} --- skipping {}.'.format(exe_name, opt_flag))
+                if not args.force:
+                    if os.path.exists(exe_name):
+                        print('\tFound {} --- skipping {}.'.format(exe_name, opt_flag))
+                    else:
+                        print('\tBuilding {}...'.format(exe_name))
+                        run([CC, opt_flag, '-o', exe_name, c_file])
+                    if os.path.exists(exe_prof_name):
+                        print('\tFound {} --- skipping {}.'.format(exe_prof_name, opt_flag))
+                    else:
+                        print('\tBuilding {}...'.format(exe_prof_name))
+                        run([CC, '-pg', opt_flag, '-o', exe_prof_name, c_file])
                     continue
                 print('\tBuilding {}...'.format(exe_name))
                 # BEGIN COMPILE
                 run([CC, opt_flag, '-o', exe_name, c_file])
+                run([CC, '-pg', opt_flag, '-o', exe_name, c_file])
                 # END   COMPILE
             os.chdir('../')
     os.chdir('../')
