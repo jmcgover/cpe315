@@ -4,7 +4,7 @@ import errno
 import os
 import sys
 import subprocess
-from subprocess import run
+from subprocess import call
 
 sys.path.append(os.getcwd())
 import lab4
@@ -17,12 +17,12 @@ def main():
     os.chdir(FOLD_CHSTONE)
     arg_parser = get_args_compile()
     args = arg_parser.parse_args()
-    for file in os.scandir('./'):
-        if file.is_dir():
-            test_name = file.name
+    for file in os.listdir('./'):
+        if os.path.isdir(file):
+            test_name = file
             c_file = file_to_compile[test_name]
             print('Entering {}({})...'.format(test_name, c_file))
-            os.chdir(file.name)
+            os.chdir(file)
             for i in range(0,3 + 1):
                 exe_name = '{}-O{}'.format(test_name, i)
                 exe_prof_name = '{}-prof-O{}'.format(test_name, i)
@@ -40,17 +40,17 @@ def main():
                         print('\tFound {} --- skipping {}.'.format(exe_name, opt_flag))
                     else:
                         print('\tBuilding {}...'.format(exe_name))
-                        run([CC, opt_flag, '-o', exe_name, c_file])
+                        call([CC, opt_flag, '-o', exe_name, c_file])
                     if os.path.exists(exe_prof_name):
                         print('\tFound {} --- skipping {}.'.format(exe_prof_name, opt_flag))
                     else:
                         print('\tBuilding {}...'.format(exe_prof_name))
-                        run([CC, '-pg', opt_flag, '-o', exe_prof_name, c_file])
+                        call([CC, '-pg', opt_flag, '-o', exe_prof_name, c_file])
                     continue
                 print('\tBuilding {}...'.format(exe_name))
                 # BEGIN COMPILE
-                run([CC, opt_flag, '-o', exe_name, c_file])
-                run([CC, '-pg', opt_flag, '-o', exe_name, c_file])
+                call([CC, opt_flag, '-o', exe_name, c_file])
+                call([CC, '-pg', opt_flag, '-o', exe_name, c_file])
                 # END   COMPILE
             os.chdir('../')
     os.chdir('../')
