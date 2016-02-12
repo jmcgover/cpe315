@@ -1,0 +1,56 @@
+
+ Performance counter stats for './sha-O1':
+
+          0.438801      task-clock (msec)         #    0.240 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               118      page-faults               #    0.269 M/sec                  
+         1,002,730      cycles                    #    2.285 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+         1,015,701      instructions              #    1.01  insns per cycle        
+           142,667      branches                  #  325.129 M/sec                  
+             3,762      branch-misses             #    2.64% of all branches        
+
+       0.001828303 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s

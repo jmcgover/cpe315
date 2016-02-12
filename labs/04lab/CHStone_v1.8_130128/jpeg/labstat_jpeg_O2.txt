@@ -1,0 +1,56 @@
+
+ Performance counter stats for './jpeg-O2':
+
+          0.947758      task-clock (msec)         #    0.399 CPUs utilized          
+                 1      context-switches          #    0.001 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               131      page-faults               #    0.138 M/sec                  
+         2,169,699      cycles                    #    2.289 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+         2,902,746      instructions              #    1.34  insns per cycle        
+           466,045      branches                  #  491.734 M/sec                  
+            19,945      branch-misses             #    4.28% of all branches        
+
+       0.002376226 seconds time elapsed
+
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.000s
+
+
+real	0m0.008s
+real	0m0.007s
+user	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.001s
+
+real	0m0.006s
+user	0m0.001s
+sys	0m0.000s

@@ -1,0 +1,56 @@
+
+ Performance counter stats for './dfmul-O0':
+
+          0.408799      task-clock (msec)         #    0.211 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               130      page-faults               #    0.318 M/sec                  
+           932,903      cycles                    #    2.282 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           625,993      instructions              #    0.67  insns per cycle        
+           126,665      branches                  #  309.847 M/sec                  
+             4,044      branch-misses             #    3.19% of all branches        
+
+       0.001932866 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s

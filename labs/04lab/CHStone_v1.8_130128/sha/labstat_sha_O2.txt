@@ -1,0 +1,56 @@
+
+ Performance counter stats for './sha-O2':
+
+          0.409734      task-clock (msec)         #    0.245 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               118      page-faults               #    0.288 M/sec                  
+           935,489      cycles                    #    2.283 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+         1,030,905      instructions              #    1.10  insns per cycle        
+           124,117      branches                  #  302.921 M/sec                  
+             3,813      branch-misses             #    3.07% of all branches        
+
+       0.001673674 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+
+real	0m0.004s
+real	0m0.004s
+user	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.000s

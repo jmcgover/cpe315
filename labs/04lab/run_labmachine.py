@@ -26,17 +26,18 @@ def main():
                 exe_prof_name = './{}-prof-O{}'.format(test_name, i)
                 assert(os.path.exists(exe_name))
 
-                # BEGIN RPISTAT
-                call([EXE_RPISTAT, exe_name])
-                # END   RPISTAT
+                # BEGIN PERF STAT
                 lab_res_filename = '{}_{}_{}.txt'.format('labstat',test_name,opt_level)
                 gpf_res_filename = '{}_{}_{}.txt'.format('labgprof',test_name,opt_level)
-                os.rename(FILE_RPISTAT, rpi_res_filename)
-                with open(rpi_res_filename, 'a') as file:
+                #os.rename(FILE_RPISTAT, rpi_res_filename)
+                with open(lab_res_filename, 'w') as file:
+                    call(['perf','stat', exe_name], stderr=file)
+                with open(lab_res_filename, 'a') as file:
                     for j in range(10):
                         #call(['/usr/bin/env','time', '-f', 'Run {}: %e'.format(i), exe_name], stdout=file)
                         #call(['time', exe_name], stderr=file, shell=True)
                         subprocess.Popen(['/bin/bash', '-c', 'time {}'.format(exe_name)], stderr=file)
+                # END   PERF STAT
                 with open(gpf_res_filename, 'w') as file:
                     print('Running {}'.format(exe_prof_name))
                     subprocess.call(['gprof', exe_prof_name], stdout=file)

@@ -1,0 +1,56 @@
+
+ Performance counter stats for './sha-O3':
+
+          0.397107      task-clock (msec)         #    0.243 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               118      page-faults               #    0.297 M/sec                  
+           906,557      cycles                    #    2.283 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           960,325      instructions              #    1.06  insns per cycle        
+           103,571      branches                  #  260.814 M/sec                  
+             3,444      branch-misses             #    3.33% of all branches        
+
+       0.001634543 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.000s

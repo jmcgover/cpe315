@@ -1,0 +1,56 @@
+
+ Performance counter stats for './dfadd-O0':
+
+          0.439929      task-clock (msec)         #    0.249 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               130      page-faults               #    0.296 M/sec                  
+         1,004,801      cycles                    #    2.284 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           891,229      instructions              #    0.89  insns per cycle        
+           185,559      branches                  #  421.793 M/sec                  
+             4,237      branch-misses             #    2.28% of all branches        
+
+       0.001769791 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s

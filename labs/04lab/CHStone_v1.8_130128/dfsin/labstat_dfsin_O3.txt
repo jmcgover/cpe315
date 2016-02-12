@@ -1,0 +1,56 @@
+
+ Performance counter stats for './dfsin-O3':
+
+          0.463812      task-clock (msec)         #    0.249 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               131      page-faults               #    0.282 M/sec                  
+         1,060,198      cycles                    #    2.286 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           865,661      instructions              #    0.82  insns per cycle        
+           169,222      branches                  #  364.850 M/sec                  
+             4,658      branch-misses             #    2.75% of all branches        
+
+       0.001862358 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.006s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.000s

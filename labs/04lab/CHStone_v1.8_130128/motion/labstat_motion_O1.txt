@@ -1,0 +1,56 @@
+
+ Performance counter stats for './motion-O1':
+
+          0.353188      task-clock (msec)         #    0.209 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               115      page-faults               #    0.326 M/sec                  
+           729,211      cycles                    #    2.065 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           397,004      instructions              #    0.54  insns per cycle        
+            76,763      branches                  #  217.343 M/sec                  
+             3,492      branch-misses             #    4.55% of all branches        
+
+       0.001689350 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.006s
+user	0m0.001s
+
+sys	0m0.000s
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.000s

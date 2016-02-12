@@ -1,0 +1,56 @@
+
+ Performance counter stats for './blowfish-O2':
+
+          0.443500      task-clock (msec)         #    0.267 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               121      page-faults               #    0.273 M/sec                  
+         1,014,184      cycles                    #    2.287 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           902,083      instructions              #    0.89  insns per cycle        
+           110,712      branches                  #  249.632 M/sec                  
+             3,857      branch-misses             #    3.48% of all branches        
+
+       0.001659506 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s

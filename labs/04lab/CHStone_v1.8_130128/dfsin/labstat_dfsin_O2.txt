@@ -1,0 +1,56 @@
+
+ Performance counter stats for './dfsin-O2':
+
+          0.451629      task-clock (msec)         #    0.253 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               130      page-faults               #    0.288 M/sec                  
+         1,031,134      cycles                    #    2.283 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+           872,982      instructions              #    0.85  insns per cycle        
+           171,423      branches                  #  379.566 M/sec                  
+             4,657      branch-misses             #    2.72% of all branches        
+
+       0.001788190 seconds time elapsed
+
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.000s
