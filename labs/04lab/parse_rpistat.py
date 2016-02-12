@@ -48,7 +48,7 @@ def main():
                             results[opt_level]['cpi'] = float(tuple[1])
                 cycles_per_second = 700 * 1000000
                 results[opt_level]['calculated'] = results[opt_level]['cycles'] * 1/cycles_per_second
-            with open('{}-lab.csv'.format(test_name), 'w') as file:
+            with open('{}-rpi.csv'.format(test_name), 'w') as file:
                 print('{},{},{},{},{}'.format(test_name + '-pi', 'O0', 'O1', 'O2','O3'),file=file)
                 key = 'cpi'
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Average CPI',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
