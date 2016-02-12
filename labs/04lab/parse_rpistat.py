@@ -46,18 +46,18 @@ def main():
                             results[opt_level]['instructions'] = int(tuple[2])
                         if tuple[0] == 'CPI':
                             results[opt_level]['cpi'] = float(tuple[1])
-                cycles_per_second = 700 * 1000000000
+                cycles_per_second = 700 * 1000000
                 results[opt_level]['calculated'] = results[opt_level]['cycles'] * 1/cycles_per_second
             with open('{}-lab.csv'.format(test_name), 'w') as file:
-                print('{},{},{},{},{}'.format(test_name + '-lab 'O0', 'O1', 'O2','O3'),file=file)
+                print('{},{},{},{},{}'.format(test_name + '-pi', 'O0', 'O1', 'O2','O3'),file=file)
                 key = 'cpi'
-                print('{},{},{},{},{}'.format('Average CPI',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Average CPI',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'instructions'
                 print('{},{},{},{},{}'.format('Instructions',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'avg'
-                print('{},{},{},{},{}'.format('Runtime(measured)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(measured)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'calculated'
-                print('{},{},{},{},{}'.format('Runtime(calculated)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(calculated)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 print('{},,,,'.format('Function with fastest measured exec. time',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
             os.chdir('../')
     os.chdir('../')

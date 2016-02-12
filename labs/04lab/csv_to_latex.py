@@ -24,17 +24,27 @@ def get_args_csv_to_latex(description=DESC_CSV_TO_LATEX):
     return arg_parser
 
 class CSV(object):
-    def __init__(self, filename):
+    def __init__(self, filename, delim=','):
         self.filename = None
         self.header = None
+        self.data = None
         self.num_cols = 0
         header = None
+        data = []
+        num_cols = 0
         with open(filename, 'r') as file:
+            header = file.readline().split(delim)
+            num_cols = len(header)
             for line in file:
-                print(line)
+                data.append(line.split(delim))
+
         self.filename = filename
         self.header = header
+        self.data = data
+        self.num_cols = num_cols
+        assert(self.filename)
         assert(self.header)
+        assert(self.data)
         assert(self.num_cols)
     def print_to_latex(file=sys.stdout):
         return
