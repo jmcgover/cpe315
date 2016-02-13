@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Runs the rpistat and gprof command on the raspberry pi benchmarks, saving
+    their output into a txt file.
+"""
 import errno
 import os
 import sys

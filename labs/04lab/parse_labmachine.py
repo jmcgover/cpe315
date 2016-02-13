@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Parses the lab benchmark result files and outputs a csv file as per the lab
+    instructions. Leaves the function empty, 'cause I don't wanna parse that.
+"""
 import errno
 import os
 import sys

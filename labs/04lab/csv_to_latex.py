@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Takes a list of CSV filenames and outputs them into a LaTeX table, with the
+    name of the file as the reference and the caption.
+"""
 import argparse
 import errno
 import os
