@@ -1,6 +1,6 @@
-aes-pi,O0,O1,O2,O3
-Average CPI,3.595000,3.770000,3.769000,3.910000
-Instructions,3006180,2998022,2863816,2991684
-Runtime(measured),0.086900,0.098100,0.079100,0.078600
-Runtime(calculated),0.015437,0.016147,0.015420,0.016710
-Function with fastest measured exec. time,,,,
+aes-lab,O0,O1,O2,O3
+Average CPI,1.449275,1.492537,1.470588,1.492537
+Instructions,519030,460581,459693,457883
+Runtime(measured),0.003100,0.005200,0.005000,0.001600
+Runtime(calculated),0.000328,0.000300,0.000296,0.000294
+Function,,,,

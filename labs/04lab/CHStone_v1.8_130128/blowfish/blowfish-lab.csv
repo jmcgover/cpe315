@@ -1,6 +1,6 @@
-blowfish-pi,O0,O1,O2,O3
-Average CPI,2.194000,5.939000,2.579000,2.569000
-Instructions,4366648,6315108,3468916,3431384
-Runtime(measured),0.404400,0.094800,0.075700,0.079000
-Runtime(calculated),0.013689,0.053575,0.012782,0.012594
-Function with fastest measured exec. time,,,,
+blowfish-lab,O0,O1,O2,O3
+Average CPI,0.847458,1.052632,1.123596,1.123596
+Instructions,1421892,916382,902083,900173
+Runtime(measured),0.003500,0.005200,0.005400,0.005700
+Runtime(calculated),0.000564,0.000421,0.000443,0.000441
+Function,,,,

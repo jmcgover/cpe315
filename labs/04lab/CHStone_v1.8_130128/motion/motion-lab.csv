@@ -1,6 +1,6 @@
-motion-pi,O0,O1,O2,O3
-Average CPI,3.392000,15.281000,3.615000,3.632000
-Instructions,2215698,2452715,2228776,2245282
-Runtime(measured),0.416700,0.066400,0.078100,0.076500
-Runtime(calculated),0.010737,0.053541,0.011509,0.011649
-Function with fastest measured exec. time,,,,
+motion-lab,O0,O1,O2,O3
+Average CPI,1.851852,1.851852,1.754386,1.785714
+Instructions,415886,397004,403985,400830
+Runtime(measured),0.002400,0.004100,0.002800,0.005600
+Runtime(calculated),0.000341,0.000353,0.000312,0.000312
+Function,,,,

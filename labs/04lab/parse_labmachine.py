@@ -58,7 +58,7 @@ def main():
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(measured)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'calculated'
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(calculated)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
-                print('{},,,,'.format('Function with fastest measured exec. time',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},,,,'.format('Function',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
             os.chdir('../')
     os.chdir('../')
     return 0

@@ -1,6 +1,6 @@
-adpcm-pi,O0,O1,O2,O3
-Average CPI,3.083000,3.277000,3.486000,3.581000
-Instructions,2924522,2540038,2480426,2513706
-Runtime(measured),0.072200,0.066700,0.071900,0.071800
-Runtime(calculated),0.012879,0.011890,0.012352,0.012858
-Function with fastest measured exec. time,,,,
+adpcm-lab,O0,O1,O2,O3
+Average CPI,1.388889,1.470588,1.515152,1.470588
+Instructions,551044,469071,475966,476500
+Runtime(measured),0.003100,0.003600,0.005000,0.003100
+Runtime(calculated),0.000334,0.000304,0.000318,0.000306
+Function,,,,
