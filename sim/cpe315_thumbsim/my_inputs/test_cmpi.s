@@ -11,8 +11,7 @@
 main:
         push {r7, lr}
         mov r1, #1
-        mov r2, #2
-        cmp r1, r2
+        cmp r1, #9
         blt answer
         mov r0, #11
         b return
