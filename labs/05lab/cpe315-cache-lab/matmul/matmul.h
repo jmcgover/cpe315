@@ -16,16 +16,15 @@
 
 // Matrix Structure declaration
 typedef struct {
-	//width of the matrix represented
+        //width of the matrix represented
     unsigned int width;
-	//height of the matrix represented
+        //height of the matrix represented
     unsigned int height;
-	//number of elements between the beginnings of adjacent
-	// rows in the memory layout (useful for representing sub-matrices)
+        //number of elements between the beginnings of adjacent
+        // rows in the memory layout (useful for representing sub-matrices)
     unsigned int pitch;
-	//Pointer to the first element of the matrix represented
+        //Pointer to the first element of the matrix represented
     float* elements;
 } Matrix;
 
 #endif // _MATMUL_H_
-

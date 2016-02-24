@@ -1,0 +1,11 @@
+Matrix Multiply of two 1024x1024 matrices took 1682116854ns.
+Printing Result Matrix:
+******************************************************
+Done.
+
+ Performance counter stats for './mm_opt':
+
+             20605      cache-misses                                                
+
+       2.653042696 seconds time elapsed
+
