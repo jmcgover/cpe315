@@ -8,7 +8,7 @@ void matmul( float*, const float*, const float*, unsigned int, unsigned int, uns
 ////////////////////////////////////////////////////////////////////////////////
 //! C = A * B
 //! @param C          result matrix
-//! @param A          matrix A 
+//! @param A          matrix A
 //! @param B          matrix B
 //! @param hA         height of matrix A
 //! @param wB         width of matrix B
@@ -46,5 +46,4 @@ Matrix Allocate2ndMatrix(int height, int width)
     M.elements[i] = (rand() / (float)RAND_MAX);
   }
   return M;
-}	
-
+}
