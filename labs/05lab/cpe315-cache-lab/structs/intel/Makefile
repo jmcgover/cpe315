@@ -8,7 +8,7 @@ all: computeavg computeavg_opt
 #	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $(BIN).o $(SRCS)
 #	$(CXX) $(CFLAGS) $(LDFLAGS) -o $(BIN) *.o
 
-computeavg: computeavg.o hrt-arm.o
+computeavg: computeavg.o hrt-intel.o
 	$(CXX) $(CFLAGS) $(LDFLAGS) -o $@ $^
 
 computeavg.o: structs.cpp
@@ -24,10 +24,10 @@ computeavg_opt.o: structs_opt.cpp
 run: run_og run_opt
 
 run_og: computeavg
-	./computeavg
+	./computeavg | tee og_struct_intel.txt
 
 run_opt: computeavg_opt
-	./computeavg_opt
+	./computeavg_opt | tee opt_struct_intel.txt
 
 clean:
 	rm -fv computeavg.o computeavg_opt.o *~ $(BIN)

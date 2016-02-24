@@ -18,5 +18,16 @@ mm_opt: mm_opt.o hrt-arm.o driver-arm.o
 mm_opt.o: matmul_opt.cpp
 	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $@ $^
 
+.PHONY: clean
+comp: og_mm_arm.txt opt_mm_arm.txt
+	diff -s output.gold og_mm_arm.txt
+	diff -s output.gold opt_mm_arm.txt
+
+og_mm_arm.txt: mm
+	./$^ | tee og_mm_arm.txt
+
+opt_mm_arm.txt: mm_opt
+	./$^ | tee opt_mm_arm.txt
+
 clean:
-	rm -fv mm.o mm_opt.o $(BIN)
+	rm -fv computeavg.o computeavg_opt.o *~ *.txt $(BIN)

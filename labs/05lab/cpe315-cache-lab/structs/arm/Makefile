@@ -24,10 +24,10 @@ computeavg_opt.o: structs_opt.cpp
 run: run_og run_opt
 
 run_og: computeavg
-	./computeavg
+	./computeavg | tee og_struct_arm.txt
 
 run_opt: computeavg_opt
-	./computeavg_opt
+	./computeavg_opt | tee opt_struct_arm.txt
 
 clean:
 	rm -fv computeavg.o computeavg_opt.o *~ $(BIN)
