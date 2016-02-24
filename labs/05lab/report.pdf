@@ -1,0 +1,100 @@
+<!DOCTYPE html><html itemscope itemtype="http://schema.org/Product"><head><script type="text/javascript">// Stop superfish from loading
+window.similarproducts = true</script><style>[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak  {display: none !important; display: none; }</style><title>Login - ShareLaTeX, Online LaTeX Editor</title><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/stylesheets/style.css?fingerprint=58304c3a9e010c50127c66116fd27209"><link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="alternate" href="https://www.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="en"><link rel="alternate" href="https://monitoring.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="en"><link rel="alternate" href="https://es.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="es"><link rel="alternate" href="https://pt.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="pt"><link rel="alternate" href="https://de.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="de"><link rel="alternate" href="https://fr.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="fr"><link rel="alternate" href="https://cs.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="cs"><link rel="alternate" href="https://nl.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="nl"><link rel="alternate" href="https://sv.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="sv"><link rel="alternate" href="https://it.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="it"><link rel="alternate" href="https://tr.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="tr"><link rel="alternate" href="https://cn.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="cn"><link rel="alternate" href="https://no.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="no"><link rel="alternate" href="https://da.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="da"><link rel="alternate" href="https://ru.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="ru"><link rel="alternate" href="https://ko.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="ko"><link rel="alternate" href="https://ja.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" hreflang="ja"><meta itemprop="name" content="ShareLaTeX, the Online LaTeX Editor"><meta itemprop="description" name="description" content="An online LaTeX editor that's easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more."><meta itemprop="image" name="image" content="https://www.sharelatex.com/favicon.ico"><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-11004462-4', 'sharelatex.com');
+ga('send', 'pageview');</script><script type="text/javascript">window.csrfToken = "Ufghz5L6-Uw1jXeX0rLAyujo3B_ctcNJTDzo";</script><script src="/minjs/libs/jquery-1.11.1.min.js"></script><script src="/minjs/libs/angular-1.3.15.min.js"></script><script src="/minjs/libs/raven-1.1.22.min.js"></script><script type="text/javascript">if (typeof(Raven) != "undefined" && Raven.config) {
+ Raven.config("https://4f0989f11cb54142a5c3d98b421b930a@app.getsentry.com/34706", {
+ tags: { 'commit': '4ffaa7', 'build': '1234' },
+ release: '1234',
+ // Ignore list based off: https://gist.github.com/1878283
+ ignoreErrors: [
+  'DealPly',
+  // Random plugins/extensions
+  'top.GLOBALS',
+  // See: http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
+  'originalCreateNotification',
+  'canvas.contentDocument',
+  'MyApp_RemoveAllHighlights',
+  'http://tt.epicplay.com',
+  'Can\'t find variable: ZiteReader',
+  'jigsaw is not defined',
+  'ComboSearch is not defined',
+  'http://loading.retry.widdit.com/',
+  'atomicFindClose',
+  // Facebook borked
+  'fb_xd_fragment',
+  // ISP optimizing proxy - `Cache-Control: no-transform` seems to reduce this. (thanks @acdha)
+  // See http://stackoverflow.com/questions/4113268/how-to-stop-javascript-injection-from-vodafone-proxy
+  'bmi_SafeAddOnload',
+  'EBCallBackMessageReceived',
+  // See http://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx
+  'conduitPage',
+  '/NS_ERROR_NOT_CONNECTED/i',
+  "/Cannot read property 'row' of undefined/i",
+  'TypeError: start is undefined'
+ ],
+ ignoreUrls: [
+  // Facebook flakiness
+  /graph\.facebook\.com/i,
+  // Facebook blocked
+  /connect\.facebook\.net\/en_US\/all\.js/i,
+  // Woopra flakiness
+  /eatdifferent\.com\.woopra-ns\.com/i,
+  /static\.woopra\.com\/js\/woopra\.js/i,
+  // Chrome extensions
+  /extensions\//i,
+  /^chrome:\/\//i,
+  // Other plugins
+  /127\.0\.0\.1:4001\/isrunning/i,  // Cacaoweb
+  /webappstoolbarba\.texthelp\.com\//i,
+  /metrics\.itunes\.apple\.com\.edgesuite\.net\//i,
+  /a\.disquscdn\.com/i,
+  /platform\.twitter\.com/i,
+  /pstatic\.datafastguru\.info/i
+ ],
+ shouldSendCallback: function(data) {
+  // only send a fraction of errors
+  var sampleRate = 0.01;
+  return (Math.random() <= sampleRate);
+ },
+ dataCallback: function(data) {
+  // remove circular references from object
+  var cache = [];
+  var s = JSON.stringify(data, function(k, v) { if (typeof v === 'object' && v !== null) { if (cache.indexOf(v) !== -1) return "[circular]"; cache.push(v); }; return v; });
+  return JSON.parse(s);
+ }
+ // we highly recommend restricting exceptions to a domain in order to filter out clutter
+ // whitelistUrls: ['example.com/scripts/']
+ }).install();
+}</script><script>window.sharelatex = {
+ siteUrl: 'https://www.sharelatex.com',
+ jsPath:  '/minjs/',
+ sixpackDomain: 'https://sixpack.sharelatex.com'
+};
+window.systemMessages = [];
+window.ab = {}
+window.user_id = ''
+</script><script>window.sharelatex.algolia = {
+ app_id:'SK53GL4JLY',
+ api_key:'1606ccef5b70ac44680b61e6b0285126',
+ indexes:{"templates":"templates-production","institutions":"institutions"}
+}
+</script><script>window.sharelatex.templates = {
+ user_id : '515d4e908d2c843b4a00620b',
+ cdnDomain : 'https://d1hk1zhcb5hn6i.cloudfront.net',
+ indexName : 'templates-production'
+}</script></head><body><div ng-cloak ng-controller="SystemMessagesController" class="system-messages"><div ng-repeat="message in messages" ng-controller="SystemMessageController" ng-hide="hidden" class="system-message"><a href ng-click="hide()" class="pull-right">&times;</a><div ng-bind-html="htmlContent" class="system-message-content"></div></div></div><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" ng-class="{active: !navCollapsed}" class="navbar-toggle"><i class="fa fa-bars"></i></button><a href="/" class="navbar-brand"></a></div><div collapse="navCollapsed" class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right"><li class="subdued"><a href="/user/subscription/plans" class="subdued">Plans & Pricing</a></li><li dropdown class="dropdown subdued"><a href dropdown-toggle class="dropdown-toggle">Help<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="/learn">Documentation</a></li><li><a href="#" class="js-tender-widget">Contact us</a></li></ul></li><li><a href="/register">Register</a></li><li><a href="/login">Log In</a></li></ul></div></div></nav><div class="content content-alt"><div class="container"><div class="row"><div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4"><div class="card"><div class="page-header"><h1>Log In</h1></div><form async-form="login" name="loginForm" action="/login" method="POST" ng-cloak><input name="_csrf" type="hidden" value="Ufghz5L6-Uw1jXeX0rLAyujo3B_ctcNJTDzo"><input name="redir" type="hidden" value="/project/56cd53283a091c210d42c6db/output/output.pdf"><form-messages for="loginForm"></form-messages><div class="form-group"><input type="email" name="email" required placeholder="email@example.com" ng-model="email" ng-model-options="{ updateOn: 'blur' }" ng-init="email = undefined" focus="true" class="form-control"><span ng-show="loginForm.email.$invalid &amp;&amp; loginForm.email.$dirty" class="small text-primary">Must be an email address</span></div><div class="form-group"><input type="password" name="password" required placeholder="********" ng-model="password" class="form-control"><span ng-show="loginForm.password.$invalid &amp;&amp; loginForm.password.$dirty" class="small text-primary">required</span></div><div class="actions"><button type="submit" ng-disabled="loginForm.inflight" class="btn-primary btn"><span ng-show="!loginForm.inflight">Login</span><span ng-show="loginForm.inflight">Logging in...</span></button><a href="/user/password/reset" class="pull-right">Forgot your password?</a></div></form></div></div></div></div></div><div ng-controller="AbTestController"></div><footer class="site-footer"><div class="container"><div class="row"><ul class="col-md-9"><li dropdown class="dropdown dropup subdued"><a href="#" dropdown-toggle data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tooltip="Language" class="dropdown-toggle"><img src="/img/flags/24/en.png"></a><ul role="menu" class="dropdown-menu"><li class="dropdown-header">Language</li><li class="lngOption"><a href="https://www.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/en.png"> English</a></li><li class="lngOption"><a href="https://es.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/es.png"> Spanish</a></li><li class="lngOption"><a href="https://pt.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/pt.png"> Portuguese</a></li><li class="lngOption"><a href="https://de.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/de.png"> German</a></li><li class="lngOption"><a href="https://fr.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/fr.png"> French</a></li><li class="lngOption"><a href="https://cs.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/cs.png"> Czech</a></li><li class="lngOption"><a href="https://nl.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/nl.png"> Dutch</a></li><li class="lngOption"><a href="https://sv.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/sv.png"> Swedish</a></li><li class="lngOption"><a href="https://it.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/it.png"> Italian</a></li><li class="lngOption"><a href="https://tr.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/tr.png"> Turkish</a></li><li class="lngOption"><a href="https://cn.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/cn.png"> Chinese (Simplified)</a></li><li class="lngOption"><a href="https://no.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/no.png"> Norwegian</a></li><li class="lngOption"><a href="https://da.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/da.png"> Danish</a></li><li class="lngOption"><a href="https://ru.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/ru.png"> Russian</a></li><li class="lngOption"><a href="https://ko.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/ko.png"> Korean</a></li><li class="lngOption"><a href="https://ja.sharelatex.com/login?cache_bust=1456300469097&amp;redir=/project/56cd53283a091c210d42c6db/output/output.pdf" class="menu-indent"><img src="/img/flags/24/ja.png"> Japanese</a></li></ul></li><li>© 2016 ShareLaTeX</li><li><a href="/tos">Terms</a></li><li><a href="/privacy_policy">Privacy</a></li><li><a href="/security">Security</a></li><li><a href class="js-tender-widget">Contact</a></li><li><a href="/about">About</a></li><li><a href="/blog">Blog</a></li><li><a href="/university?ref=footer">Universities</a></li></ul><ul class="col-md-3 text-right"><li><a href="http://www.twitter.com/sharelatex"><i class='fa fa-twitter-square'></i></a></li><li><a href="http://www.facebook.com/pages/ShareLaTeX/301671376556660"><i class='fa fa-facebook-square'></i></a></li><li><a href="https://plus.google.com/115074691861228882827"><i class='fa fa-google-plus-square'></i></a></li><li><a href="https://github.com/sharelatex/sharelatex"><i class='fa fa-github-square'></i></a></li></ul></div></div></footer><script type="text/javascript">window.requirejs = {
+ "urlArgs" : "fingerprint=015748c4e40d363dad6afea508496380-7366c7e24f3418b0d7c8fca334f35c34",
+ "paths" : {
+  "moment": "libs/moment-2.7.0"
+ }
+};	</script><script data-main="/minjs/main.js" baseurl="/minjs/" src="/minjs/libs/require.js?fingerprint=0cb51c1a5e8e978cbe069c07f3b8d16d"></script><script src="https://sharelatex.tenderapp.com/tender_widget.js"></script><script type="text/javascript">Tender = {
+ hideToggle: true,
+ widgetToggles: $(".js-tender-widget"),
+ category: "questions"
+};
+
+
+</script></body></html>
