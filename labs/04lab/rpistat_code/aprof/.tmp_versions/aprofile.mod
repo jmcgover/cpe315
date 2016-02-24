@@ -1,2 +1,2 @@
-/home/lupo/315/aprof/aprofile.ko
-/home/lupo/315/aprof/aprof.o
+/home/winston/cpe315/labs/04lab/rpistat_code/aprof/aprofile.ko
+/home/winston/cpe315/labs/04lab/rpistat_code/aprof/aprof.o
