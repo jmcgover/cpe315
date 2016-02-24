@@ -1,6 +1,6 @@
-gsm-pi,O0,O1,O2,O3
-Average CPI,3.351000,3.525000,3.578000,3.556000
-Instructions,2403804,2338092,2294574,2310578
-Runtime(measured),0.072000,0.068900,0.066400,0.069600
-Runtime(calculated),0.011509,0.011774,0.011729,0.011737
-Function with fastest measured exec. time,,,,
+gsm-lab,O0,O1,O2,O3
+Average CPI,1.724138,1.886792,1.785714,1.886792
+Instructions,432128,406845,403525,401001
+Runtime(measured),0.003000,0.002800,0.005000,0.002200
+Runtime(calculated),0.000326,0.000364,0.000319,0.000335
+Function,,,,

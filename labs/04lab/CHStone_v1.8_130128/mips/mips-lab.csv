@@ -1,6 +1,6 @@
-mips-pi,O0,O1,O2,O3
-Average CPI,3.533000,3.608000,3.552000,3.719000
-Instructions,2306690,2258292,2235996,2365992
-Runtime(measured),0.072800,0.083100,0.062100,0.069800
-Runtime(calculated),0.011643,0.011641,0.011347,0.012570
-Function with fastest measured exec. time,,,,
+mips-lab,O0,O1,O2,O3
+Average CPI,1.818182,1.818182,1.754386,1.818182
+Instructions,412839,413248,411227,412662
+Runtime(measured),0.003400,0.005600,0.002000,0.005000
+Runtime(calculated),0.000329,0.000362,0.000315,0.000380
+Function,,,,

@@ -1,6 +1,6 @@
-dfadd-pi,O0,O1,O2,O3
-Average CPI,3.438000,3.393000,3.440000,3.417000
-Instructions,5318908,5141270,5203926,5139546
-Runtime(measured),0.205100,0.284200,0.200000,0.198000
-Runtime(calculated),0.026120,0.024924,0.025571,0.025090
-Function with fastest measured exec. time,,,,
+dfadd-lab,O0,O1,O2,O3
+Average CPI,1.123596,1.219512,1.190476,1.190476
+Instructions,891229,887069,882242,888228
+Runtime(measured),0.003500,0.005600,0.005200,0.004200
+Runtime(calculated),0.000440,0.000473,0.000459,0.000463
+Function,,,,

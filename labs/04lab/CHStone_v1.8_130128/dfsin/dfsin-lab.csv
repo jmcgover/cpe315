@@ -1,6 +1,6 @@
-dfsin-pi,O0,O1,O2,O3
-Average CPI,3.135000,3.264000,3.474000,3.405000
-Instructions,8037766,5783864,5878866,5659064
-Runtime(measured),0.318900,0.238600,0.217900,0.202400
-Runtime(calculated),0.035996,0.026967,0.029178,0.027523
-Function with fastest measured exec. time,,,,
+dfsin-lab,O0,O1,O2,O3
+Average CPI,1.111111,1.162791,1.176471,1.219512
+Instructions,1053091,935737,872982,865661
+Runtime(measured),0.002900,0.003900,0.005700,0.005300
+Runtime(calculated),0.000515,0.000474,0.000452,0.000464
+Function,,,,

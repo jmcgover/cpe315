@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Parses the lab benchmark result files and outputs a csv file as per the lab
+    instructions. Leaves the function empty, 'cause I don't wanna parse that.
+"""
 import errno
 import os
 import sys
@@ -58,7 +64,7 @@ def main():
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(measured)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'calculated'
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(calculated)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
-                print('{},,,,'.format('Function with fastest measured exec. time',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},,,,'.format('Function',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
             os.chdir('../')
     os.chdir('../')
     return 0

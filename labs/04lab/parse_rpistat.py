@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Parses the rpi benchmark result files and outputs a csv file as per the lab
+    instructions. Leaves the function empty, 'cause I don't wanna parse that.
+"""
 import errno
 import os
 import sys
 import subprocess
-from subprocess import run
 
 import collections
 from collections import defaultdict
@@ -15,16 +20,17 @@ from lab4 import FOLD_CHSTONE
 
 def main():
     os.chdir(FOLD_CHSTONE)
-    for file in os.scandir('./'):
-        if file.is_dir():
-            test_name = file.name
+    for file in os.listdir('./'):
+        if os.path.isdir(file):
+            test_name = file
             print('Entering {}...'.format(test_name))
-            os.chdir(file.name)
+            os.chdir(file)
             results = {}
             for i in range(0,3 + 1):
                 opt_level = 'O{}'.format(i)
                 exe_name = './{}-{}'.format(test_name, opt_level)
                 rpi_res_filename = '{}_{}_{}.txt'.format('rpistat',test_name,opt_level)
+                gpf_res_filename = '{}_{}_{}.txt'.format('rpigprof',test_name,opt_level)
                 print('\tParsing {}...'.format(rpi_res_filename))
                 results[opt_level] = {}
                 results[opt_level]['time'] = 0.0
@@ -58,7 +64,7 @@ def main():
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(measured)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
                 key = 'calculated'
                 print('{},{:.6f},{:.6f},{:.6f},{:.6f}'.format('Runtime(calculated)',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
-                print('{},,,,'.format('Function with fastest measured exec. time',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
+                print('{},,,,'.format('Function',results['O0'][key],results['O1'][key],results['O2'][key],results['O3'][key]),file=file)
             os.chdir('../')
     os.chdir('../')
     return 0

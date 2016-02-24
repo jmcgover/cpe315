@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-
+"""
+    Jeff McGovern
+    CPE 315, Winter 2016
+    Lab 04: Performance Measurement
+    Compiles the benchmarks needed for performance measurement.
+"""
 import errno
 import os
 import sys

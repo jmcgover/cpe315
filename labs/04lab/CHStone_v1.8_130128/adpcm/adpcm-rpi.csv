@@ -3,4 +3,4 @@ Average CPI,3.083000,3.277000,3.486000,3.581000
 Instructions,2924522,2540038,2480426,2513706
 Runtime(measured),0.072200,0.066700,0.071900,0.071800
 Runtime(calculated),0.012879,0.011890,0.012352,0.012858
-Function with fastest measured exec. time,,,,
+Function,,,,

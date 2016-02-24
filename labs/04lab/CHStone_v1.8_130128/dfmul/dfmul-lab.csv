@@ -1,6 +1,6 @@
-dfmul-pi,O0,O1,O2,O3
-Average CPI,3.682000,3.665000,3.754000,3.626000
-Instructions,3848648,3748184,3869184,3719028
-Runtime(measured),0.124000,0.137200,0.116800,0.134500
-Runtime(calculated),0.020243,0.019624,0.020749,0.019264
-Function with fastest measured exec. time,,,,
+dfmul-lab,O0,O1,O2,O3
+Average CPI,1.492537,1.470588,1.470588,1.408451
+Instructions,625993,633416,621905,617514
+Runtime(measured),0.003400,0.005500,0.005600,0.005600
+Runtime(calculated),0.000409,0.000407,0.000402,0.000384
+Function,,,,
