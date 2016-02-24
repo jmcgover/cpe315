@@ -1,0 +1,41 @@
+Matrix Multiply of two 1024x1024 matrices took 455362448ns.
+Printing Result Matrix:
+******************************************************
+Done.
+***************************************************************
+rpistat: ./mm_opt
+Wed Feb 24 07:02:05 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 626
+
+ Cycles: 43747692302
+ Instructions: 2707354867 [10794930870]
+ IBUF stall cycles: 604260957 [2409346236]
+ Instr periods: 157
+ CPI: 4.053  
+ IBUF stall percent: 5.507  %
+
+ DC cached accesses: 14938111 [59562149]
+ DC misses: 3487873 [13907060]
+ DC periods: 157
+ DC miss ratio: 23.349 %
+
+ MicroTLB misses: 744579 [2987861]
+ Main TLB misses: 131032 [525807]
+ TLB periods: 156
+ Micro miss rate: 0.277   PTI
+ Main miss rate: 0.049   PTI
+
+ Branches: 395514919 [1587130380]
+ Mispredicted BR: 25482714 [102257557]
+ BR periods: 156
+ Branch rate: 147.026 PTI
+ Mispredict ratio: 6.443  %

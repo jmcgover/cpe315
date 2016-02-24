@@ -1,0 +1,5 @@
+Initialization time of two 1048576 vectors took 293144000ns.
+Average of 1048576 floats = 0.49963.
+Average of 1048576 floats = 0.49963.
+Computation time of two 1048576 vectors took 94228000ns.
+ DC misses: 376325 [1128975]

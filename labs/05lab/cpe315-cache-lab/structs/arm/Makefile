@@ -25,10 +25,14 @@ computeavg_opt.o: structs_opt.cpp
 run: run_og run_opt
 
 run_og: computeavg
-	perf stat -e cache-misses ./computeavg 2>&1 | tee og_time_struct_arm.txt
+	rpistat ./computeavg 2>&1 | tee og_time_struct_arm.txt
+	cat rpistat.txt | grep 'DC misses' >> og_time_struct_arm.txt
+	rm -fv rpistat.txt
 
 run_opt: computeavg_opt
-	perf stat -e cache-misses ./computeavg_opt 2>&1| tee opt_time_struct_arm.txt
+	rpistat ./computeavg_opt 2>&1| tee opt_time_struct_arm.txt
+	cat rpistat.txt | grep 'DC misses' >> opt_time_struct_arm.txt
+	rm -fv rpistat.txt
 
 clean:
 	rm -fv computeavg.o computeavg_opt.o *~ $(BIN)

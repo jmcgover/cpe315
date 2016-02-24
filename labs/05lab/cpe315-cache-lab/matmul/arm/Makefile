@@ -24,10 +24,14 @@ run: og_mm_arm.txt opt_mm_arm.txt
 	diff -qs output.gold opt_mm_arm.txt
 
 og_mm_arm.txt: mm
-	perf stat -e cache-misses ./$^  1> og_mm_arm.txt 2>og_time_mm_arm.txt
+	rpistat ./$^  1> og_mm_arm.txt 2>og_time_mm_arm.txt
+	cat rpistat.txt  >> og_time_mm_arm.txt
+	rm -fv rpistat.txt
 
 opt_mm_arm.txt: mm_opt
-	perf stat -e cache-misses ./$^  1> opt_mm_arm.txt 2>opt_time_mm_arm.txt
+	rpistat ./$^  1> opt_mm_arm.txt 2>opt_time_mm_arm.txt
+	cat rpistat.txt  >> opt_time_mm_arm.txt
+	rm -fv rpistat.txt
 
 .PHONY: clean cleanall
 
