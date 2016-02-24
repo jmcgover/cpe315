@@ -3,6 +3,7 @@ CFLAGS = -Wall -O2
 LDFLAGS = -lrt
 SRCS = structs.cpp
 BIN = computeavg computeavg_opt
+OBJ = computeavg.o computeavg_opt.o
 
 all: computeavg computeavg_opt
 #	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $(BIN).o $(SRCS)
@@ -20,14 +21,17 @@ computeavg_opt: computeavg_opt.o hrt-intel.o
 computeavg_opt.o: structs_opt.cpp
 	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $@ $^
 
-.PHONY: run run_og run_opt clean
+.PHONY: run run_og run_opt clean cleanall
 run: run_og run_opt
 
 run_og: computeavg
-	./computeavg | tee og_struct_intel.txt
+	perf stat -e cache-misses ./computeavg 2>&1 | tee og_time_struct_intel.txt
 
 run_opt: computeavg_opt
-	./computeavg_opt | tee opt_struct_intel.txt
+	perf stat -e cache-misses ./computeavg_opt 2>&1| tee opt_time_struct_intel.txt
 
 clean:
 	rm -fv computeavg.o computeavg_opt.o *~ $(BIN)
+
+cleanall: clean
+	rm -fv *.txt

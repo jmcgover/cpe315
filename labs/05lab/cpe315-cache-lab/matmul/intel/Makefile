@@ -19,7 +19,7 @@ mm_opt: mm_opt.o hrt-intel.o driver-intel.o
 mm_opt.o: matmul_opt.cpp
 	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $@ $^
 
-comp: og_mm_intel.txt opt_mm_intel.txt
+run: og_mm_intel.txt opt_mm_intel.txt
 	diff -qs output.gold og_mm_intel.txt
 	diff -qs output.gold opt_mm_intel.txt
 

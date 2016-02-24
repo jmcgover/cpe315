@@ -19,7 +19,7 @@ mm_opt: mm_opt.o hrt-arm.o driver-arm.o
 mm_opt.o: matmul_opt.cpp
 	$(CXX) $(CFLAGS) $(LDFLAGS) -c -o $@ $^
 
-comp: og_mm_arm.txt opt_mm_arm.txt
+run: og_mm_arm.txt opt_mm_arm.txt
 	diff -qs output.gold og_mm_arm.txt
 	diff -qs output.gold opt_mm_arm.txt
 

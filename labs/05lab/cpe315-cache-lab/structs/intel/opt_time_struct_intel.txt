@@ -1,0 +1,11 @@
+Initialization time of two 67108864 vectors took 997593488ns.
+Average of 67108864 floats = 0.25000.
+Average of 67108864 floats = 0.25000.
+Computation time of two 67108864 vectors took 91352099ns.
+
+ Performance counter stats for './computeavg_opt':
+
+            747105      cache-misses                                                
+
+       1.096675219 seconds time elapsed
+
