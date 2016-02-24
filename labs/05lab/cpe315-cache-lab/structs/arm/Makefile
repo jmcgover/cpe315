@@ -26,12 +26,12 @@ run: run_og run_opt
 
 run_og: computeavg
 	rpistat ./computeavg 2>&1 | tee og_time_struct_arm.txt
-	cat rpistat.txt | grep 'DC misses' >> og_time_struct_arm.txt
+	cat rpistat.txt  >> og_time_struct_arm.txt
 	rm -fv rpistat.txt
 
 run_opt: computeavg_opt
 	rpistat ./computeavg_opt 2>&1| tee opt_time_struct_arm.txt
-	cat rpistat.txt | grep 'DC misses' >> opt_time_struct_arm.txt
+	cat rpistat.txt  >> opt_time_struct_arm.txt
 	rm -fv rpistat.txt
 
 clean:
