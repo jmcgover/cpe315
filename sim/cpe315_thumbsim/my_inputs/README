@@ -1,0 +1,15 @@
+#------------------------------------------------------------------------------#
+Description
+
+This folder contains test files written in assembly in the form test_[name].s.
+A Makefile builds the executables and test_[name].sim files.
+#------------------------------------------------------------------------------#
+Usage
+
+To generate all files, type the following:
+    make
+    git add .
+    git commit -m "message"
+    git pull
+    git push
+#------------------------------------------------------------------------------#
