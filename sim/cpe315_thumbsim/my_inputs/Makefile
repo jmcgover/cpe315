@@ -4,6 +4,7 @@ SIMS += test_sub.sim
 SIMS += test_cmp.sim
 SIMS += test_cmpi.sim
 SIMS += test_pushpop.sim
+SIMS += test_stmldm.sim
 
 all: $(SIMS)
 

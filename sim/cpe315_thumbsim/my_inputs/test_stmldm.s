@@ -10,14 +10,13 @@
         .type   main, %function
 main:
         push {r7, lr}
-        mov r1, #1
-        mov r2, #2
         mov r7, #7
-        push {r1, r2, r7}
-        mov r1, #11
-        mov r2, #11
+        mov r3, sp
+        mov r4, r3
+        stm r3!,{r7}
         mov r7, #11
-        pop {r1, r2, r7}
+        ldm r4!,{r7}
         mov r0, r7
         pop {r7, pc}
+
 
