@@ -1,0 +1,41 @@
+Initialization time of two 1048576 vectors took 295121000ns.
+Average of 1048576 floats = 0.49963.
+Average of 1048576 floats = 0.49963.
+Computation time of two 1048576 vectors took 32314000ns.
+***************************************************************
+rpistat: ./computeavg_opt
+Wed Feb 24 07:12:51 2016
+
+***************************************************************
+
+System information
+ Number of processors: 1
+
+Performance events
+ [ ... ] = scaled event count
+ PTI = per thousand instructions
+ Total periods: 5
+
+ Cycles: 255631070
+ Instructions: 22537073 [56342682]
+ IBUF stall cycles: 11689932 [29224830]
+ Instr periods: 2
+ CPI: 4.537  
+ IBUF stall percent: 11.432 %
+
+ DC cached accesses: 803485 [4017425]
+ DC misses: 278760 [1393800]
+ DC periods: 1
+ DC miss ratio: 34.694 %
+
+ MicroTLB misses: 23842 [119210]
+ Main TLB misses: 2274 [11370]
+ TLB periods: 1
+ Micro miss rate: 2.116   PTI
+ Main miss rate: 0.202   PTI
+
+ Branches: 1658996 [8294980]
+ Mispredicted BR: 40069 [200345]
+ BR periods: 1
+ Branch rate: 147.224 PTI
+ Mispredict ratio: 2.415  %

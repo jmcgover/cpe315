@@ -1,0 +1,4 @@
+Initialization time of two 67108864 vectors took 996981235ns.
+Average of 67108864 floats = 0.25000.
+Average of 67108864 floats = 0.25000.
+Computation time of two 67108864 vectors took 88339485ns.

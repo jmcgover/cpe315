@@ -1,0 +1,11 @@
+Matrix Multiply of two 1024x1024 matrices took 3742091490ns.
+Printing Result Matrix:
+******************************************************
+Done.
+
+ Performance counter stats for './mm':
+
+             22809      cache-misses                                                
+
+       4.472739423 seconds time elapsed
+
