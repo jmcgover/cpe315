@@ -166,9 +166,12 @@ void execute() {
         case ALU_ASRI:
           break;
         case ALU_ADDR:
+            cout << "FOUND AN ADDDDDDDD" << endl;
           rf.write(alu.instr.addr.rd, rf[alu.instr.addr.rn] + rf[alu.instr.addr.rm]);
           break;
         case ALU_SUBR:
+            cout << "FOUND A SUBBBBBBBB" << endl;
+          rf.write(alu.instr.subr.rd, rf[alu.instr.subr.rn] + rf[alu.instr.subr.rm]);
           break;
         case ALU_ADD3I:
           rf.write(alu.instr.add3i.rd, rf[alu.instr.add3i.rn] + alu.instr.add3i.imm);
@@ -254,13 +257,16 @@ void execute() {
       misc_ops = decode(misc);
       switch(misc_ops) {
         case MISC_PUSH:
+            cout << "FOUND A PUUUUUUUSH" << endl;
           break;
         case MISC_POP:
+            cout << "FOUND A POPPPPPPPP" << endl;
           break;
         case MISC_SUB:
           rf.write(SP_REG, SP - (misc.instr.sub.imm*4));
           break;
         case MISC_ADD:
+            cout << "FOUND AN ADDDDDDDD" << endl;
           rf.write(SP_REG, SP + (misc.instr.add.imm*4));
           break;
       }
