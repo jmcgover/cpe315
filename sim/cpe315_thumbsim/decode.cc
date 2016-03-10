@@ -138,7 +138,7 @@ SP_Ops decode (const SP_Type data) {
         if (opts.instrs) { 
             cout << "mov";
             if (data.instr.mov.d) {
-                cout << " sp, r" << data.instr.mov.rm << endl;
+               cout << " sp, r" << data.instr.mov.rm << endl;
             }
             else {
                 cout << " r" << data.instr.mov.rd << ", r" << data.instr.mov.rm << endl;
@@ -332,7 +332,8 @@ int decode (const COND_Type data) {
 
 int decode (const UNCOND_Type data) {
     if (opts.instrs) { 
-        cout << "b 0x" << hex << data.instr.b.imm << endl;
+        //cout << "b 0x" << hex << data.instr.b.imm << endl;
+        cout << "b 0x" << hex << rf[15] + 2*(int)((char)(data.instr.b.imm))+2 << endl;
     }
 }
 

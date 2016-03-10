@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "thumbsim.hpp"
 #define PC_REG 15
 #define LR_REG 14
@@ -27,6 +28,11 @@ int BitCount(unsigned short registers) {
         }
     }
     return bitCount;
+}
+
+void setNegativeZero(unsigned int result) {
+    flags.N = (result & 0x01 << 31) >> 31;
+    flags.Z = result == 0;
 }
 
 void setCarryOverflow (int num1, int num2, OFType oftype) {
@@ -158,6 +164,7 @@ static int checkCondition(unsigned short cond) {
             break;
         case LT:
             /* Signed Less Than */
+            //cout <<"\tLT" << endl;
             if (flags.N != flags.V) {
                 return TRUE;
             }
@@ -170,9 +177,13 @@ static int checkCondition(unsigned short cond) {
             break;
         case LE:
             /* Signed Less Than or Equal */
+            //cout <<"\tLE" << endl;
+            //printf("\tZ: %d C: %d N: %d V: %d\n", flags.Z, flags.C, flags.N, flags.V);
             if (flags.Z == 1 || flags.N != flags.V) {
+                //cout <<"\tTRUE" << endl;
                 return TRUE;
             }
+            //cout <<"\tFALSE" << endl;
             break;
         case AL:
             /* Always */
@@ -229,41 +240,82 @@ void execute() {
                 case ALU_ASRI:
                     break;
                 case ALU_ADDR:
-                    cout << "FOUND AN ADDDDDDDD" << endl;
-                    setCarryOverflow(alu.instr.addr.rn, alu.instr.addr.rm, OF_ADD);
-                    rf.write(alu.instr.addr.rd, rf[alu.instr.addr.rn] + rf[alu.instr.addr.rm]);
+                    //cout <<"\tALU_ADDR" << endl;
+                    num1 = rf[alu.instr.addr.rn];
+                    num2 = rf[alu.instr.addr.rm];
+                    result = num1 + num2;
+                    setCarryOverflow(num1, num2, OF_ADD);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.addr.rd, result);
                     break;
                 case ALU_SUBR:
-                    cout << "FOUND A SUBBBBBBBB" << endl;
-                    setCarryOverflow(alu.instr.subr.rn, alu.instr.subr.rm, OF_SUB);
-                    rf.write(alu.instr.subr.rd, rf[alu.instr.subr.rn] - rf[alu.instr.subr.rm]);
+                    //cout <<"\tALU_SUBR" << endl;
+                    num1 = rf[alu.instr.subr.rn];
+                    num2 = rf[alu.instr.subr.rm];
+                    result = num1 - num2;
+                    setCarryOverflow(num1, num2, OF_SUB);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.subr.rd, result);
                     break;
                 case ALU_ADD3I:
-                    setCarryOverflow(alu.instr.add3i.rn, alu.instr.add3i.imm, OF_ADD);
-                    rf.write(alu.instr.add3i.rd, rf[alu.instr.add3i.rn] + alu.instr.add3i.imm);
+                    //cout <<"\tALU_ADD3I" << endl;
+                    num1 = rf[alu.instr.add3i.rn];
+                    num2 = alu.instr.add3i.imm;
+                    result = num1 + num2;
+                    setCarryOverflow(num1, num2, OF_ADD);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.add3i.rd, result);
                     break;
                 case ALU_SUB3I:
-                    setCarryOverflow(alu.instr.sub3i.rn, alu.instr.sub3i.imm, OF_SUB);
-                    rf.write(alu.instr.sub3i.rd, rf[alu.instr.sub3i.rn] - alu.instr.sub3i.imm);
+                    //cout <<"\tALU_SUB3I" << endl;
+                    num1 = rf[alu.instr.sub3i.rn];
+                    num2 = alu.instr.sub3i.imm;
+                    result = num1 - num2;
+                    setCarryOverflow(num1, num2, OF_SUB);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.sub3i.rd, result);
                     break;
                 case ALU_MOV:
-                    rf.write(alu.instr.mov.rdn, alu.instr.mov.imm);
+                    //cout <<"\tALU_MOV" << endl;
+                    result = alu.instr.mov.imm;
+                    setNegativeZero(result);
+                    flags.C = flags.C;
+                    rf.write(alu.instr.mov.rdn, result);
                     break;
                 case ALU_CMP:
+                    num1 = rf[alu.instr.cmp.rdn];
+                    num2 = alu.instr.cmp.imm;
+                    //cout <<"\tALU_CMP " << num1 << " vs. " << num2 << endl;
+                    result = num1 - num2;
+                    setCarryOverflow(num1, num2, OF_SUB);
+                    setNegativeZero(result);
+                    //printf("\tZ: %d C: %d N: %d V: %d\n", flags.Z, flags.C, flags.N, flags.V);
                     break;
                 case ALU_ADD8I:
-                    setCarryOverflow(alu.instr.add8i.rdn, alu.instr.add8i.imm, OF_ADD);
-                    rf.write(alu.instr.add8i.rdn, rf[alu.instr.add8i.rdn] + alu.instr.add8i.imm);
+                    //cout <<"\tALU_ADD8I" << endl;
+                    num1 = rf[alu.instr.add8i.rdn];
+                    num2 = alu.instr.add8i.imm;
+                    result = num1 + num2;
+                    setCarryOverflow(num1, num2, OF_ADD);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.add8i.rdn, result);
                     break;
                 case ALU_SUB8I:
-                    setCarryOverflow(alu.instr.sub8i.rdn, alu.instr.sub8i.imm, OF_SUB);
-                    rf.write(alu.instr.sub8i.rdn, rf[alu.instr.sub8i.rdn] - alu.instr.sub8i.imm);
+                    //cout <<"\tALU_SUB8I" << endl;
+                    num1 = rf[alu.instr.sub8i.rdn];
+                    num2 = alu.instr.sub8i.imm;
+                    result = num1 - num2;
+                    setCarryOverflow(num1, num2, OF_SUB);
+                    setNegativeZero(result);
+                    rf.write(alu.instr.sub8i.rdn, result);
                     break;
                 default:
+                    cout << "FUCCCKKKKKK" << endl;
                     break;
             }
             break;
-        case BL: 
+        case BL:
+            //cout <<"\tBL" << endl;
             bl_ops = decode(blupper);
             if (bl_ops == BL_UPPER) {
                 // PC has already been incremented above
@@ -300,6 +352,9 @@ void execute() {
             sp_ops = decode(sp);
             switch(sp_ops) {
                 case SP_MOV:
+                    //cout <<"\tSP_MOV" << endl;
+                    result = rf[sp.instr.mov.rm];
+                    setNegativeZero(result);
                     if (sp.instr.mov.d) {
                         rf.write(SP_REG, rf[sp.instr.mov.rm]);
                     }
@@ -315,12 +370,19 @@ void execute() {
             ldst_ops = decode(ld_st);
             switch(ldst_ops) {
                 case STRR:
+                    //cout <<"\tSTRR" << endl;
                     addr = rf[ld_st.instr.ld_st_imm.rn] + ld_st.instr.ld_st_imm.imm * 4;
                     dmem.write(addr, rf[ld_st.instr.ld_st_imm.rt]);
+                    //printf("\tD[%d]:%d\n", addr, dmem[addr]);
                     break;
                 case LDRR:
+                    //cout <<"\tLDRR" << endl;
                     addr = rf[ld_st.instr.ld_st_imm.rn] + ld_st.instr.ld_st_imm.imm * 4;
                     rf.write(ld_st.instr.ld_st_imm.rt, dmem[addr]);
+                    //printf("\tR[%d]:%d\n", ld_st.instr.ld_st_imm.rt, rf[ld_st.instr.ld_st_imm.rt]);
+                    break;
+                default:
+                    //cout <<"\tldst_ops: default" << endl;
                     break;
             }
             break;
@@ -328,17 +390,16 @@ void execute() {
             misc_ops = decode(misc);
             switch(misc_ops) {
                 case MISC_PUSH:
+                    //cout <<"\tMISC_PUSH" << endl;
                     {
                         addr = SP - 4 * BitCount(misc.instr.push.reg_list);
                         for (int i = 0; i < 8; i++) {
                             if (misc.instr.push.reg_list & 0x01 << i) {
-                                cout << "addr: " << addr << endl;
                                 dmem.write(addr, rf[i]);
                                 addr += 4;
                             }
                         }
                         if (misc.instr.push.m) {
-                            cout << "addr: " << addr << endl;
                             dmem.write(addr, PC);
                             addr += 4;
                         }
@@ -346,6 +407,7 @@ void execute() {
                     }
                     break;
                 case MISC_POP:
+                    //cout <<"\tMISC_POP" << endl;
                     {
                         addr = SP;
                         for (int i = 0; i < 8; i++) {
@@ -355,23 +417,24 @@ void execute() {
                             }
                         }
                         if (misc.instr.pop.m) {
-                            cout << "addr: " << addr << endl;
-                            rf.write(PC_REG, dmem[addr]);
+                            rf.write(PC_REG, 2*(int)((char)(dmem[addr]))+2);
                         }
                         rf.write(SP_REG, SP + 4 * BitCount(misc.instr.pop.reg_list));
                     }
                     break;
                 case MISC_SUB:
-                    rf.write(SP_REG, SP - (misc.instr.sub.imm*4));
+                    //cout <<"\tMISC_SUB" << endl;
+                    rf.write(SP_REG, SP - (misc.instr.sub.imm * 4));
                     break;
                 case MISC_ADD:
-                    //cout << "FOUND AN ADDDDDDDD" << endl;
-                    rf.write(SP_REG, SP + (misc.instr.add.imm*4));
+                    //cout <<"\tMISC_ADD" << endl;
+                    rf.write(SP_REG, SP + (misc.instr.add.imm * 4));
                     break;
             }
             break;
         case COND:
             decode(cond);
+            //cout <<"\tCOND" << endl;
             // Once you've completed the checkCondition function,
             // this should work for all your conditional branches.
             if (checkCondition(cond.instr.b.cond)){
@@ -380,14 +443,19 @@ void execute() {
             break;
         case UNCOND:
             decode(uncond);
+            //cout <<"\tUNCOND imm:" << uncond.instr.b.imm << endl;
+            rf.write(PC_REG, (PC + 2*(int)((char)(uncond.instr.b.imm))+2));
             break;
         case LDM:
             decode(ldm);
+            //cout <<"\tLDM" << endl;
             break;
         case STM:
             decode(stm);
+            //cout <<"\tSTM" << endl;
             break;
         case LDRL:
+            //cout <<"\tLDRL" << endl;
             decode(ldrl);
             // Need to check for alignment by 4
             if (PC & 2) {
@@ -409,6 +477,7 @@ void execute() {
             break;
         case ADD_SP:
             decode(addsp);
+            //cout <<"\tADD_SP" << endl;
             rf.write(addsp.instr.add.rd, SP + (addsp.instr.add.imm*4));
             break;
         default:
